@@ -5,7 +5,7 @@ In-Parameter-Order (IPO) é um algoritmo desenvolvido por (Yu Lei and K. C. Tai,
 # Como utilizar
 
 
-´´´
+```
 @Test
 	public void testeExemplo(){
 			
@@ -62,7 +62,8 @@ In-Parameter-Order (IPO) é um algoritmo desenvolvido por (Yu Lei and K. C. Tai,
 		
 		impressora.imprimirSuiteTeste();	 
 	}
-´´´	
+
+```	
      
 
 
