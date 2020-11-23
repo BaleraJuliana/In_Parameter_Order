@@ -18,7 +18,7 @@ f1.addNivel(n1);
 f1.addNivel(n2);
 
 ```
-## Como utilizar 
+## Como utilizar :interrobang:
 
 Para utilizar o algoritmo, basta criar um novo teste de unidade dentro do arquivo "TesteIPO.java", como no exemplo a seguir. Observe que os fatores e níveis são inseridos um a um (são 3 fatores com respectivamente 2, 2 e 3 níveis cada um).   
 
