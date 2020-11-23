@@ -4,27 +4,15 @@ In-Parameter-Order (IPO) é um algoritmo desenvolvido por (Yu Lei and K. C. Tai,
 
 # Como utilizar
 
+Para utilizar o algoritmo, basta criar um novo teste de unidade dentro do arquivo "TesteIPO.java", como no exemplo a seguir. Observe que os fatores e níveis são inseridos um a um (são 3 fatores com respectivamente 2, 2 e 3 níveis cada um).   
+
 
 ```
 @Test
 	public void testeExemplo(){
-			
-		/**
-		 *  O Intuito é apenas utilizar o método de crescimento horizontal. 
-		 *  Para isso é necessário tomar cuidado com quais entradas vc irá submeter
-		 *  Um exemplo de caso de teste que utiliza somente crescimento horizontal é composto por tres fatores com respectivamente dois, dois e 3 níveis cada um.
-		 *  
-		 *  Suite de teste esperada:
-		 * 
-		 * 		 	A	B	C
-		 * 		1	1	1	1
-		 * 		2	1	2	2	
-		 * 		3	2	1	2
-		 * 		4	2	2	1
-		 * 	
-		 **/
 		
-		this.limpar();
+		
+		this.limpar(); // sempre chamar esse método antes de utilizar.
 
 		Nivel n1 = new Nivel(1, 1);
 		Nivel n2 = new Nivel(1, 2);
