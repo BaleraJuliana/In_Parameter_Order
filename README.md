@@ -4,7 +4,20 @@ In-Parameter-Order (IPO) é um algoritmo desenvolvido por (Yu Lei and K. C. Tai,
 
 # Aplicando Teste Combinatorial para a geração de testes de unidade 
 
-Em linhas gerais, podemos dizer que o Teste Combinatorial, especificamente a técnica *Designs Combinatoriais* , se baseia na idéia de que a maioria das falhas de um software pode ser revelada através da submissão de todas as suas interações de fatores e níveis de acordo um um determinado grau de interação. No contexto do teste de unidade, fatores podem ser vistos como os parâmetros de um determinado método e os níveis os possíveis valores que cada um pode assumir. Assim por exemplo, em um método que eu tenha um parâmetro do tipo booleano ele poderá assumir no máximo dois valores, verdadeiro ou falso. Dessa forma, esse parâmetro especifico seria um fator com 2 níveis.      
+Em linhas gerais, podemos dizer que o Teste Combinatorial, especificamente a técnica *Designs Combinatoriais*, se baseia na idéia de que a maioria das falhas de um software pode ser revelada através da submissão de todas as suas interações de fatores e níveis de acordo com um determinado grau de interação. No contexto do teste de unidade, fatores podem ser vistos como os parâmetros de um determinado método e os níveis os possíveis valores que cada um pode assumir. Assim por exemplo, em um método que tenha um parâmetro do tipo booleano ele poderá assumir no máximo dois valores, verdadeiro ou falso. Dessa forma, esse parâmetro especifico seria 1 fator com 2 níveis, devendo ser mapeado dessa forma no código fonte do algoritmo:
+
+
+
+```
+Fator f1 = new Fator(1);
+
+Nivel n1 = new Nivel(1, 1);
+Nivel n2 = new Nivel(1, 2);
+
+f1.addNivel(n1);
+f1.addNivel(n2);
+
+```
 
 # Como utilizar
 
